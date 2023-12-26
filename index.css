@@ -1,0 +1,321 @@
+/* @font-face {
+    font-family: "Bagoss";
+    src: url("font/BagossStandardTRIAL-Regular.ttf") format("truetype");
+    font-weight: 400;
+    
+}
+@font-face {
+    font-family: "Bagoss";
+    src: url("font/BagossStandardTRIAL-Medium.ttf") format("truetype");
+    font-weight: 500;
+    
+}
+@font-face {
+    font-family: "Bagoss";
+    src: url("font/BagossStandardTRIAL-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    
+} 
+@font-face {
+    font-family: "Bagoss";
+    src: url("font/BagossStandardTRIAL-Bold.ttf") format("truetype");
+    font-weight: 700;
+    
+}  */
+
+
+/* ===== Custom Font Added ==== */
+
+@font-face {
+    font-family: BagossStandardTRIAL;
+    src: url(font/BagossStandardTRIAL-Regular.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: BagossStandardTRIAL;
+    src: url(font/BagossStandardTRIAL-Medium.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: BagossStandardTRIAL;
+    src: url(font/BagossStandardTRIAL-SemiBold.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: BagossStandardTRIAL;
+    src: url(font/BagossStandardTRIAL-Bold.woff);
+    font-weight: 700;
+}
+
+/* ===== End ==== */
+
+
+/* ===== Body ==== */
+
+body {
+    font-family: BagossStandardTRIAL;
+}
+
+.bg-image {
+    background: url(images/white-background-with-pattern-text-ramadan-month-ramadan-kareemramadan-mubarak-beautiful.png) no-repeat;
+    background-size: cover;
+
+}
+
+.bg-image {
+    height: 100vh;
+}
+
+/* ===== End ==== */
+
+
+/* ===== Left Side ==== */
+
+.left {
+    row-gap: 60px;
+    padding-left: 100px;
+    width: 68%;
+}
+
+.left p {
+    font-weight: 600;
+    font-size: 2.0rem;
+    line-height: 50px;
+
+
+}
+
+.left p span {
+    color: #b19347;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+
+/* ===== Mobile-gif ==== */
+
+.mobile-gif {
+
+    display: none;
+}
+
+.mobile-gif img {
+    border-radius: 10px;
+}
+
+/* ===== Mobile-gif ==== */
+
+
+
+.left .id-input input {
+    height: 65px;
+    width: 420px;
+}
+
+
+.user-id-input {
+    outline: 1px solid #b19347;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #c9b278;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #d7bd7c;
+}
+
+.left button {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 170px;
+    height: 46px;
+    background-color: #b19347;
+    margin-top: 20px;
+}
+
+.left button:hover {
+    background-color: white;
+    border: 1px solid #b19347;
+}
+
+.id-input input::placeholder {
+    color: white;
+}
+
+/* ===== Left-Side End ==== */
+
+/* ===== Right-Side ==== */
+.right {
+    display: flex;
+    justify-content: flex-end;
+    width: 32%;
+}
+
+/* ===== Right-Side End ==== */
+
+
+/* ===== Media Query ==== */
+
+@media screen and (min-width: 769px) and (max-width: 970px) {
+    .left {
+        padding: 30px;
+    }
+
+    .left p {
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+
+    .left p span {
+        font-size: 2.5rem;
+    }
+
+    .left .id-input input {
+        height: 50px;
+        width: 300px;
+    }
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .parent-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .mobile-gif {
+        display: flex;
+        justify-content: center;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .left {
+        row-gap: 0px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px 0px 0px;
+
+    }
+
+    .mobile-gif img {
+        width: 55%;
+    }
+
+    .left p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    .left p span {
+        font-size: 1.5rem;
+    }
+
+    .left .id-input input {
+        height: 45px;
+        width: 150%;
+    }
+
+    .id-input {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .id-input label {
+        display: none;
+    }
+
+    .id-input input::placeholder {
+        color: gray;
+    }
+
+    .id-input button {
+        margin-top: 5px;
+    }
+
+    /* .bg-image {
+        background: url(images/white-background-with-pattern-text-ramadan-month-ramadan-kareemramadan-mubarak-beautiful.png) no-repeat;
+        height: 105vh;
+    } */
+
+}
+
+@media screen and (max-width: 479px) {
+    .mobile-gif img {
+        width: 100%;
+    }
+
+    .parent-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .mobile-gif {
+        display: flex;
+        justify-content: center;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .left {
+        row-gap: 0px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0px 0px 0px;
+
+    }
+
+    .left p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    .left p span {
+        color: #b19347;
+        font-size: 1.5rem;
+    }
+
+    .left .id-input input {
+        height: 45px;
+        width: 100%;
+    }
+
+    .id-input {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .id-input label {
+        display: none;
+    }
+
+    .id-input input::placeholder {
+        color: gray;
+    }
+
+    .id-input button {
+        margin-top: 5px;
+    }
+
+}
